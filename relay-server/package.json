@@ -1,0 +1,18 @@
+{
+  "name": "securemesh-relay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "build": "echo 'Relay server is plain JS, no build needed'"
+  },
+  "dependencies": {
+    "fastify": "^5.1.0",
+    "@fastify/cors": "^10.0.1",
+    "@fastify/rate-limit": "^10.2.0",
+    "web-push": "^3.6.7",
+    "lru-cache": "^11.0.2"
+  }
+}
