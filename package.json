@@ -1,0 +1,16 @@
+{
+  "name": "securemesh",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "relay-server"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=client",
+    "dev:relay": "npm run dev --workspace=relay-server",
+    "build": "npm run build --workspace=client && npm run build --workspace=relay-server",
+    "build:client": "npm run build --workspace=client",
+    "build:relay": "npm run build --workspace=relay-server"
+  }
+}
